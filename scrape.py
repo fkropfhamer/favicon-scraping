@@ -22,8 +22,7 @@ def main():
                         file.write(r.content)
             
             except:
-                print('something went wrong!')
+                print('something went wrong!', row[1])
 
 if __name__ == "__main__":
     main()
-    
