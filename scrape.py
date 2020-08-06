@@ -1,5 +1,6 @@
 import requests
 import csv
+import favicon
 
 def main():
 
@@ -11,16 +12,24 @@ def main():
                 break 
             
             try:
-
+                """
                 r = requests.get(f"https://www.{row[1]}/favicon.ico", allow_redirects=True)
                 content_type = r.headers.get('content-type')
 
                 # print(r.headers)
+                """
 
+                icons = favicon.get(f"https://www.{row[1]}/")
+                print(icons)
+
+                for icon in icons:
+                    print(icon.width, icon.height)
+
+                """
                 if (r.status_code == 200):
                     with open(f"./files/{row[1]}.ico", 'wb') as file:
                         file.write(r.content)
-            
+                """
             except:
                 print('something went wrong!', row[1])
 
