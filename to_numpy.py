@@ -8,7 +8,7 @@ def main():
     numpy_arrays = None
 
     for filename in os.listdir(base_path):
-        with Image.open(f'{base_path}/{"wikipedia.org.ico"}') as im:
+        with Image.open(f'{base_path}/{filename}') as im:
             resized = im.resize((32, 32))
             resizedRGB = resized.convert(mode='RGB')
 
