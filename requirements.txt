@@ -1,0 +1,4 @@
+favicon
+numpy
+requests
+pillow
