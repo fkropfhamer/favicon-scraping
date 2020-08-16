@@ -19,6 +19,10 @@ def main():
 
     for filename in os.listdir(base_path):
         print(filename)
+        
+        if filename.startswith('.'):
+            continue
+
         validate(f'{base_path}/{filename}')
     
     
