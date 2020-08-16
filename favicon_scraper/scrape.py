@@ -3,7 +3,9 @@ import csv
 import favicon
 
 def main():
+    scrape()
 
+def scrape():
     with open('top-1m.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
 

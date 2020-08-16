@@ -3,6 +3,9 @@ import os
 from PIL import Image
 
 def main():
+    save_to_numpy()
+
+def save_to_numpy():
     base_path = './files'
 
     numpy_arrays = None
