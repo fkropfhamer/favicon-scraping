@@ -30,7 +30,7 @@ def save_to_numpy():
 
     print(numpy_arrays.shape)
 
-    np.save('./favicons', numpy_arrays)
+    np.save('./favicons.npy', numpy_arrays)
 
 
 if __name__ == "__main__":
